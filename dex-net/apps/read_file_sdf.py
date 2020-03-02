@@ -45,7 +45,7 @@ def do_job_convert_obj_to_sdf(x):
 
 def generate_obj_from_ply(file_name_):
     base = file_name_.split(".")[0]
-    p = subprocess.Popen(["pcl_ply2obj", base + ".ply", base + ".obj"])
+    p = subprocess.Popen(["pcl_ply2obj", base + ".ply", base + ".obj"], shell=True)
     p.wait()
 
 

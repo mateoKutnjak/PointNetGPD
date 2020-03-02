@@ -208,3 +208,7 @@ tags
 *.snm
 *.toc
 *.synctex.gz
+
+# Custom added
+
+SDFGen/
