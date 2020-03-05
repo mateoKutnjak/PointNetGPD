@@ -55,7 +55,8 @@ def do_job(i):
 
 def worker(i, sample_nums, grasp_amount, good_grasp):
     object_name = file_list_all[i][len(home_dir) + 35:]
-    print('a worker of task {} start'.format(object_name))
+    print('ls'
+          ''.format(object_name))
 
     yaml_config = YamlConfig(home_dir + "/code/grasp-pointnet/dex-net/test/config.yaml")
     gripper_name = 'robotiq_85'
@@ -150,7 +151,7 @@ if __name__ == '__main__':
     home_dir = os.environ['HOME']
     file_dir = home_dir + "/dataset/ycb_meshes_google/objects"
     file_list_all = get_file_name(file_dir)
-    object_numbers = file_list_all.__len__()
+    object_numbers = 2
 
     job_list = np.arange(object_numbers)
     job_list = list(job_list)
